@@ -23,8 +23,10 @@ class DimmerSwitch():
 def main():
     d0 = DimmerSwitch()
     d1 = DimmerSwitch()
-
     d1.turnOn()
+    for counter in range(20): #This is showing the countermeger that it can't pass 10 becuase we set it up to not go higher than 10
+        d1.raiseLevel()
+
     d1.raiseLevel()
     d1.raiseLevel()
     d1.raiseLevel()
